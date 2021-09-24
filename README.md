@@ -13,3 +13,4 @@ Assuming you have `simple_launch` and `nav2_common`, running the included `bring
 Prefixed models:
 
  - `turtlebot3_waffle_pi.urdf.xacro`
+ - `turtlebot3_waffle_pi.gazebo.urdf.xacro`
