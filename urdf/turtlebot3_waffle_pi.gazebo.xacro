@@ -138,7 +138,7 @@
         </noise>
       </ray>
       <plugin name="gazebo_ros_lds_lfcd_controller" filename="libgazebo_ros_laser.so">
-        <topicName>$(arg prefix)scan</topicName>
+        <topicName>scan</topicName>
         <frameName>$(arg prefix)base_scan</frameName>
       </plugin>
     </sensor>
@@ -166,8 +166,8 @@
         <updateRate>30.0</updateRate>
         <cameraName>camera</cameraName>
         <frameName>$(arg prefix)camera_rgb_optical_frame</frameName>
-        <imageTopicName>$(arg prefix)rgb/image_raw</imageTopicName>
-        <cameraInfoTopicName>$(arg prefix)rgb/camera_info</cameraInfoTopicName>
+        <imageTopicName>rgb/image_raw</imageTopicName>
+        <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
         <hackBaseline>0.07</hackBaseline>
         <distortionK1>0.0</distortionK1>
         <distortionK2>0.0</distortionK2>
