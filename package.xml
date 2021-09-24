@@ -16,6 +16,7 @@
   <buildtool_depend>ament_cmake</buildtool_depend>
   <depend>urdf</depend>
   <depend>simple_launch</depend>
+  <depend>nav2_common</depend>
   <export>
     <build_type>ament_cmake</build_type>
   </export>
