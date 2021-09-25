@@ -85,7 +85,7 @@
   <gazebo>
     <plugin name="imu_plugin" filename="libgazebo_ros_imu.so">
       <alwaysOn>true</alwaysOn>
-      <bodyName>$(arg prefix)imu_link</bodyName>
+      <bodyName>imu_link</bodyName>
       <frameName>$(arg prefix)imu_link</frameName>
       <topicName>$(arg prefix)imu</topicName>
       <serviceName>$(arg prefix)imu_service</serviceName>
@@ -138,7 +138,7 @@
         </noise>
       </ray>
       <plugin name="gazebo_ros_lds_lfcd_controller" filename="libgazebo_ros_laser.so">
-        <topicName>scan</topicName>
+        <topicName>$(arg prefix)scan</topicName>
         <frameName>$(arg prefix)base_scan</frameName>
       </plugin>
     </sensor>
@@ -146,7 +146,7 @@
 
 <!--link : https://www.raspberrypi.org/documentation/hardware/camera/-->
   <gazebo reference="$(arg prefix)camera_rgb_frame">
-    <sensor type="camera" name="Pi Camera">
+    <sensor type="camera" name="PiCamera">
       <always_on>true</always_on>
       <visualize>$(arg camera_visual)</visualize>
       <camera>
@@ -166,8 +166,8 @@
         <updateRate>30.0</updateRate>
         <cameraName>camera</cameraName>
         <frameName>$(arg prefix)camera_rgb_optical_frame</frameName>
-        <imageTopicName>rgb/image_raw</imageTopicName>
-        <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+        <imageTopicName>$(arg prefix)rgb/image_raw</imageTopicName>
+        <cameraInfoTopicName>$(arg prefix)rgb/camera_info</cameraInfoTopicName>
         <hackBaseline>0.07</hackBaseline>
         <distortionK1>0.0</distortionK1>
         <distortionK2>0.0</distortionK2>
