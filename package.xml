@@ -7,6 +7,7 @@
     3D models of the TurtleBot3 for simulation and visualization
   </description>
   <maintainer email="willson@robotis.com">Will Son</maintainer>
+  <maintainer email="olivier.kermorgant@ec-nantes.fr">Olivier Kermorgant</maintainer>
   <license>Apache 2.0</license>
   <url type="website">http://turtlebot3.robotis.com</url>
   <url type="repository">https://github.com/ROBOTIS-GIT/turtlebot3</url>
@@ -19,6 +20,6 @@
   <depend>nav2_common</depend>
   <export>
     <build_type>ament_cmake</build_type>
-    <gazebo_ros gazebo_model_path="${prefix}/.."/>
+<!--     <gazebo_ros gazebo_model_path="${prefix}/.."/> -->
   </export>
 </package>
