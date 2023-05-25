@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 # Authors: Darby Lim
-# 
+#
 # adapted to multi-robot + simple_launch, Olivier Kermorgant
 
 import os
@@ -34,7 +34,7 @@ def generate_launch_description():
     
     sl.declare_arg('usb_port', default_value='/dev/ttyACM0', description='Connected USB port with OpenCR')
     
-    sl.declare_arg('tb3_param_dir', 
+    sl.declare_arg('tb3_param_dir',
                    sl.find('turtlebot3_bringup', TURTLEBOT3_MODEL + '.yaml'),
                    description='Full path to turtlebot3 parameter file to load')
     
